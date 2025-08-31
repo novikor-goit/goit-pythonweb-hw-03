@@ -14,28 +14,7 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <header>
-      <nav
-        class="navbar navbar-expand navbar-dark bg-dark"
-        aria-label="Second navbar example"
-      >
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="/logo.png" alt="logo" />
-          </a>
-          <div class="collapse navbar-collapse" id="navbarsExample02">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Send message</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+  {% include "header_template.html" %}
     <div class="container mt-3">
       <main class="form-signin w-50 m-auto">
         <form action="/message" method="POST">
